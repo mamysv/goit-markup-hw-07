@@ -104,7 +104,7 @@ img {
   height: 70px;
 }
 
-.list.adress {
+.page-head .adress {
   display: none;
 }
 
@@ -141,14 +141,14 @@ img {
   margin-left: auto;
   background-color: #fff;
   border: none;
-  padding: 0;
 }
 
-.item-icon {
+.item-menu {
   fill: var(--titel-text-color);
   width: 32px;
   height: 32px;
   margin-right: 16px;
+  margin-left: auto;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -163,8 +163,96 @@ img {
       url(../images/Dark4802x.jpg);
   }
 }
+/* mob menu */
+.mob-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
 
-/*titel*/
+.mob-menu-list.list {
+  display: inline;
+}
+
+.mob-menu-item {
+  margin-right: auto;
+  padding-left: 40px;
+  margin-bottom: 40px;
+  text-align: left;
+  text-decoration: none;
+  color: #2e2f42;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+.mob-cont {
+  margin-bottom: 40px;
+}
+.mob-menu-link {
+  text-decoration: none;
+  color: #2e2f42;
+}
+.mob-menu.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+.mob-menu-item.adr .mob-menu-link {
+  color: #4d5ae5;
+  text-decoration: none;
+}
+.mob-menu-item.tel .mob-menu-link {
+  color: #434455;
+  text-decoration: none;
+}
+.modal-close-mob {
+  margin-top: 40px;
+  margin-bottom: 16px;
+  margin-right: 25px;
+  width: 24px;
+  height: 24px;
+  background-color: #e7e9fc;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+.mob-icon.list {
+  display: flex;
+  margin-left: 40px;
+}
+.mob-icon.list .item {
+  display: inline-block;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-color: #5a4fcf;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-icon.list .item-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.mob-icon.list .list-item {
+  margin-right: 56px;
+}
 .section-titel {
   display: none;
 }
@@ -848,25 +936,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 390px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .logo {
-    margin-left: 16px;
-    margin-right: auto;
-  }
-  .site-nav.list {
-    display: flex;
-    margin-right: 118px;
-  }
-  .menu-open {
-    display: none;
-  }
-
-  .container.site-nav {
-    min-width: auto;
+    max-width: 480px;
   }
 
   .hero-titel {
@@ -876,9 +946,7 @@ img {
       ),
       url(../images/Dark720.jpg);
   }
-  .list.adress .item:not(:last-child) {
-    margin-right: 40px;
-  }
+
   .site-nav.list .item {
     margin-right: 40px;
   }
@@ -925,10 +993,6 @@ img {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .list.adress {
-    display: flex;
-    flex-wrap: wrap;
-  }
 
   .section-title {
     margin-top: 0px;
@@ -947,7 +1011,9 @@ img {
   .auth-nav:is(:hover, :focus) {
     color: var(--accent-color);
   }
+}
 
+@media screen and (min-width: 768px) {
   .hero-titel {
     text-align: center;
     margin-top: auto;
@@ -959,6 +1025,16 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/peopleoffice.jpg);
+  }
+
+  .page-head .site-nav.list {
+    display: flex;
+  }
+  .page-head .adress {
+    display: inline;
+  }
+  .page-head .menu-open {
+    display: none;
   }
   .herro {
     width: auto;
@@ -1030,7 +1106,10 @@ img {
   .features-list .container {
     max-width: 1158px;
   }
-
+  .page-head .site-nav.list {
+    margin-right: auto;
+    margin-left: auto;
+  }
   .features-item.list .item {
     width: 263px;
     margin-right: 24px;
@@ -1048,6 +1127,20 @@ img {
     max-width: 1158px;
   }
 
+  .page-head .adress {
+    display: flex;
+  }
+  .adress .item {
+    margin-right: 40px;
+  }
+
+  adress .item:nth-last-child(2n) {
+    margin-right: 0px;
+  }
+  .adress {
+    display: flex;
+    margin-left: auto;
+  }
   .section-worker {
     padding-top: 120px;
     padding-bottom: 120px;

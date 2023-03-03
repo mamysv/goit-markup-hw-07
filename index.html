@@ -44,11 +44,78 @@
             </li>
           </ul>
         </address>
-        <button type="button" class="menu-open">
-          <svg class="item-icon">
+        <button type="button" data-menu-open class="menu-open">
+          <svg class="item-menu">
             <use href="./images/sprite.svg#Vectormenu" width="32px"></use>
           </svg>
         </button>
+      </div>
+      <div class="mob-menu container" data-menu>
+        <div class="mob-txt">
+          <button type="button" class="modal-close-mob" data-menu-close>
+            <svg class="close-item-icon" width="8px" height="8px">
+              <use href="./images/sprite.svg#closeblack"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item curent">
+              <a href="" class="mob-menu-link curent">Studio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="./portfolio.html" class="mob-menu-link">Portfolio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="./contacts.html" class="mob-menu-link">Contacts</a>
+            </li>
+          </ul>
+           </div>
+           <div class="mob-cont">
+          <address class="mob-menu-adress">
+            <ul class="list">
+              <li class="mob-menu-item adr">
+                <a href="mailto:info@devstudio.com" class="mob-menu-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mob-menu-item tel">
+                <a href="tel:+110001111111" class="mob-menu-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-icon list">
+            <li class="list-item">
+              <a class="item" href="">
+                <svg class="item-icon">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="list-item">
+              <a class="item" href="">
+                <svg class="item-icon">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="list-item">
+              <a class="item" href="">
+                <svg class="item-icon">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="list-item">
+              <a class="item" href="">
+                <svg class="item-icon">
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -82,7 +149,7 @@
               <h3 class="titel">Diligence</h3>
               <p class="text">
                 Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
+                growth opportunities and minimize.
               </p>
             </li>
             <li class="item">
@@ -485,5 +552,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
