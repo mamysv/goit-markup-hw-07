@@ -206,10 +206,12 @@ img {
 .mob-menu-item.adr .mob-menu-link {
   color: #4d5ae5;
   text-decoration: none;
+  font-style: normal;
 }
 .mob-menu-item.tel .mob-menu-link {
   color: #434455;
   text-decoration: none;
+  font-style: normal;
 }
 .modal-close-mob {
   margin-top: 40px;
@@ -934,9 +936,10 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 428px) {
+  
   .container {
-    max-width: 480px;
+    max-width: 428px;
   }
 
   .hero-titel {
@@ -1014,6 +1017,10 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+
+  .mob-menu.container{
+    display: none;
+  }
   .hero-titel {
     text-align: center;
     margin-top: auto;
