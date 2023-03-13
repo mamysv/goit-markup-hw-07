@@ -474,13 +474,12 @@ img {
   display: flex;
   flex-wrap: wrap;
   width: auto;
-  text-align: center;
-  margin-left: auto;
-    margin-right: auto; 
+  justify-content: center;
 }
 .logo-footer {
   width: 264px;
   text-align: center;
+  justify-content: center;
   padding-bottom: 16px;
   margin-bottom: 16px;
   color: #f4f4fd;
@@ -504,7 +503,7 @@ img {
   background-color: #2e2f42;
     margin-left: auto;
       margin-right: auto;
-      text-align: center;
+      text-align: left;
 }
 
 .footer-transcr {
@@ -516,7 +515,9 @@ img {
   letter-spacing: 0.02em;
   margin-bottom: 72px;
 }
-
+.item.txt{
+text-align: center;
+}
 .footer-social {
   width: 208px;
   font-family: "Roboto";
@@ -524,7 +525,7 @@ img {
   font-style: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-right: 80px;
+  justify-content: center;
   margin-bottom: 72px;
 }
 .footer-social .item {
@@ -569,6 +570,7 @@ img {
 }
 
 .subscribe-form{
+  justify-content: center;
   display: flex;
     flex-wrap: wrap;
     width: auto;
@@ -583,6 +585,7 @@ img {
 }
 
 .subscribe-titel {
+  text-align: center;
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
@@ -605,6 +608,10 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   margin-right: 24px;
   padding-left: 16px;
+}
+
+.subscribe-input{
+  margin-bottom: 16px;
 }
 
 .footer-button {
@@ -1160,14 +1167,29 @@ img {
    width: auto;
  }
 
+.footer-section .container{
+  text-align: left;
+  justify-content: left;
+}
 
+.logo-footer{
+  text-align: left;
+  justify-content: left;  
+}
  .footer-transcr {
    text-align: left;
    margin-right: 24px;
  }
+
  .footer-social{margin-right: auto;}
+ 
+
  .subscribe-titel{
   text-align: left;
+ }
+
+ .subscribe-form{
+  justify-content: left;
  }
  .item.txt {
    text-align: left;
@@ -1178,6 +1200,12 @@ img {
 }
 @media screen and (min-width: 1200px) {
 
+
+  .footer-section{
+    padding-top: 100px;
+    padding-bottom: 0px;
+
+  }
   .hero-titel {
     padding-top: 187px;
     padding-bottom: auto;
