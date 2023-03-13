@@ -127,7 +127,7 @@ img {
 }
 
 .herro {
-  width: 318px;
+  max-width: 318px;
   margin-bottom: 72px;
   color: #ffffff;
   font-size: 36px;
@@ -339,7 +339,7 @@ img {
 .list-worker.list .item-card {
   background-color: #fff;
   margin-bottom: 72px;
-  width: 260px;
+  width: 264px;
   margin-right: auto;
   margin-left: auto;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -424,7 +424,7 @@ img {
 .customers .item {
   display: inline-block;
   content: "";
-  width: 168px;
+  width: 190px;
   height: 88px;
   background-repeat: no-repeat;
   background-position: center;
@@ -471,7 +471,6 @@ img {
 
 /*foter*/
 .footer-section .container {
-
   display: flex;
   flex-wrap: wrap;
   width: auto;
@@ -970,7 +969,13 @@ img {
 }
 
 @media screen and (min-width: 428px) {
-  
+
+ 
+
+  .mob-menu.container{
+    max-width: 100%;
+  }
+
   .container {
     max-width: 428px;
   }
@@ -1054,10 +1059,6 @@ img {
   .container{
     max-width: 768px;
   }
-
-  .page-head{
-    width: 768px;
-  }
   .mob-menu.container{
     display: none;
   }
@@ -1084,7 +1085,7 @@ img {
     display: none;
   }
   .herro {
-    width: auto;
+    max-width: 494px;
     margin-bottom: 40px;
     color: #ffffff;
     font-size: 56px;
@@ -1128,9 +1129,9 @@ img {
   }
 
   .features-item.list .titel{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
     letter-spacing: 0.02;
     text-align: left;
   }
@@ -1148,12 +1149,57 @@ img {
   .customers-item:nth-child(3n) {
     margin-right: 0px;
   }
+  .customers-item .item {
+   width: 168px;
+ }
+ .hero-titel {
+   padding-top: 187px;
+   padding-bottom: auto;
+   margin-top: auto;
+   margin-bottom: auto;
+   width: auto;
+ }
+
+
+ .footer-transcr {
+   text-align: left;
+   margin-right: 24px;
+ }
+ .footer-social{margin-right: auto;}
+ .subscribe-titel{
+  text-align: left;
+ }
+ .item.txt {
+   text-align: left;
+   font-weight: 500px;
+   font-size: 16;
+   line-height: 1.5;
+ }
 }
 @media screen and (min-width: 1200px) {
 
-  .page-head {
-      width: 1200px;
-    }
+  .hero-titel {
+    padding-top: 187px;
+    padding-bottom: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: auto;
+  }
+  .customers-item .item{
+    width: 168px;
+  }
+
+  .footer-transcr {
+    text-align: left ;
+    margin-right: 100px;
+  }
+
+  .item.txt{
+    text-align: left;
+    font-weight: 500px;
+    font-size: 16;
+    line-height: 1.5;
+  }
 
     .item .auth-nav{
       font-size: 16px;
@@ -1168,6 +1214,9 @@ img {
     margin-right: auto;
     margin-bottom: 48px;
     width: 494px;
+  }
+  .subscribe-titel{
+    text-align: left;
   }
 
   .features-list .container {
@@ -1229,6 +1278,11 @@ img {
   .customers-item:nth-child(6n) {
     margin-right: 0px;
   }
+
+    .features-list {
+      padding-top: 96px;
+      padding-bottom: 42px;
+    }
 
   .features-item.list .item::before {
     display: block;
